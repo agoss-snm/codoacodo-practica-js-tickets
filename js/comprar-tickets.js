@@ -30,7 +30,7 @@
 
 
     function calcularTotal(){
-        if(cantidad.value != '' & categoria.value != ''){
+        if(cantidad.value != '' & categoria.value != '' & nombre.value != '' & apellido.value != '' & email.value != ''){
             totalPago.textContent = ('Usted comprará a nombre de')+ (' ') + (nombre.value)+ (' ') +(apellido.value)+ (' ') +('un total a pagar de ')+(' ')+('$')+((TICKET - calcularDescuento()) * cantidad.value) + ('')+('valido por una cantidad de:' + cantidad.value + 'de entrada/s') + ('')+ (' y se le enviara un email a:') + ('') + (email.value);
             
 
